@@ -42,3 +42,11 @@ export const normalizeLocalCurrency = (numInput) => {
     // Dot decimal (ex: 1,000.00)
     return parseFloat(input.replace(/,/g, ''))
 }
+
+export const interval = (end = 10, step = 1, start = 0) => {
+    const interval = []
+    for (let current = start; current <= end; current += step) {
+        interval.push(current)
+    }
+    return interval
+}
