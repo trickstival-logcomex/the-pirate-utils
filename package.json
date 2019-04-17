@@ -5,10 +5,19 @@
     "main": "index.js",
     "author": "trickstival <trick_stival@hotmail.com>",
     "license": "MIT",
+    "scripts": {
+        "test": "jest"
+    },
     "contributors": [
         {
             "name": "Crystopher Glodzienski",
             "email": "crystopher.glodzienski@gmail.com"
         }
-    ]
+    ],
+    "devDependencies": {
+        "@babel/core": "^7.4.3",
+        "@babel/preset-env": "^7.4.3",
+        "babel-jest": "^24.7.1",
+        "jest": "^24.7.1"
+    }
 }

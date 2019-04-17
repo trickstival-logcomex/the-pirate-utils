@@ -46,11 +46,11 @@ dom.scrollTo('.parent') // scrolls to parent
 ```js
 import { numeric as numPyrate } from 'the-pirate'
 
-numPyrate.validateCNPJ('18.837.197/0001-83') // true
-numPyrate.validateCNPJ('47.372.635/4756-32') // false
+numPyrate.cnpj.validateCNPJ('18.837.197/0001-83') // true
+numPyrate.cnpj.validateCNPJ('47.372.635/4756-32') // false
 
-numPyrate.validateCPF('93549281021') // true
-numPyrate.validateCPF('34549284521') // false
+numPyrate.cpf.validateCPF('93549281021') // true
+numPyrate.cpf.validateCPF('34549284521') // false
 
 numPyrate.normalizeLocalCurrency('20,000.04') // 20000.04 float
 numPyrate.normalizeLocalCurrency('20.000,04') // 20000.04 float

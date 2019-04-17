@@ -14,9 +14,7 @@ export const truthyJoin = (toMerge, separator = ' ') => {
     }
 }
 
-export const any = (...items) => {
-    return items.some(e => e)
-}
+export const any = (...items) => items.some(e => e)
 
 export const maybe = (obj, propsStr) => {
     const singleMaybe = (obj, prop) => {

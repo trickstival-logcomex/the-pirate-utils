@@ -1,4 +1,4 @@
-export const uuidv4 = _ =>
+export const uuidv4 = () =>
     'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, c => {
         const rand = (Math.random() * 16) | 0
         const value = c === 'x' ? rand : (rand & 0x3) | 0x8
@@ -43,7 +43,7 @@ export const normalizeLocalCurrency = (numInput) => {
     return parseFloat(input.replace(/,/g, ''))
 }
 
-export const interval = (end = 10, step = 1, start = 0) => {
+export const interval = (start = 0, end = 10, step = 1) => {
     const interval = []
     for (let current = start; current <= end; current += step) {
         interval.push(current)
