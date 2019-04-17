@@ -58,11 +58,11 @@ numPyrate.normalizeLocalCurrency('20.000,04') // 20000.04 float
 // From 0 to 10
 numPyrate.interval() // [0, 1, 2, 3, ..., 10]
 // From 0 to 99
-numPyrate.interval(99) // [0, 1, 2, 3, ..., 99]
+numPyrate.interval(4, 99) // [4, 5, 6, 7, ..., 99]
 // From 0 to 50 with 5 step
-numPyrate.interval(50, 5) // [0, 5, 10, 15, ..., 50]
+numPyrate.interval(5, 50, 5) // [5, 10, 15, 20, ..., 50]
 // From 10 to 50 with 5 step
-numPyrate.interval(50, 5, 10) // [10, 15, 20, 25, ..., 50]
+numPyrate.interval(10, 50, 5) // [10, 15, 20, 25, ..., 50]
 ```
 
 ## String examples
