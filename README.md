@@ -9,7 +9,7 @@ logic and prevent errors
 npm i the-pirate
 # Using yarn
 yarn add the-pirate
-```
+```teste
 
 ## General examples
 ```js
